@@ -1,0 +1,1788 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cung Ứng Giúp Việc Miền Nam | Giúp Việc Nhà - Mẹ & Bé - Người Cao Tuổi</title>
+
+    <meta name="description"
+          content="Cung Ứng Giúp Việc Miền Nam - Dịch vụ giúp việc nhà, chăm sóc mẹ và bé, chăm sóc người cao tuổi tận tâm, uy tín tại miền Nam.">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #263238;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1180px;
+            margin: auto;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            box-shadow: 0 2px 18px rgba(0,0,0,0.08);
+        }
+
+        .header-inner {
+            height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* LOGO */
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: #0b7fab;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 15px rgba(11,127,171,0.25);
+        }
+
+        .logo-icon svg {
+            width: 39px;
+            height: 39px;
+        }
+
+        .logo-text strong {
+            display: block;
+            color: #08698f;
+            font-size: 17px;
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            color: #718096;
+            font-size: 12px;
+        }
+
+        /* MENU */
+
+        nav {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+
+        nav a {
+            font-size: 15px;
+            font-weight: 600;
+            color: #37474f;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #0b7fab;
+        }
+
+        .header-phone {
+            background: #0b7fab;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 6px 15px rgba(11,127,171,0.2);
+        }
+
+        .header-phone:hover {
+            background: #075d7d;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(4,48,67,0.88) 0%,
+                    rgba(4,48,67,0.65) 48%,
+                    rgba(4,48,67,0.15) 100%
+                ),
+                url("images/gia-dinh.jpg") center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 680px;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.35);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 5vw, 64px);
+            line-height: 1.12;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 span {
+            color: #73d1ef;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 600px;
+            color: #e7f4f8;
+            margin-bottom: 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #0b9bc7;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #087da1;
+            transform: translateY(-2px);
+        }
+
+        .btn-light {
+            background: white;
+            color: #08698f;
+        }
+
+        .btn-light:hover {
+            background: #eefaff;
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 50px;
+        }
+
+        .section-title span {
+            color: #0b8db8;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            color: #173b4a;
+            margin: 10px 0 14px;
+        }
+
+        .section-title p {
+            color: #6b7c83;
+            font-size: 16px;
+        }
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .services {
+            background: #f7fbfd;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 26px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(28,77,94,0.08);
+            transition: 0.35s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(28,77,94,0.15);
+        }
+
+        .service-image {
+            height: 260px;
+            overflow: hidden;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .service-card:hover .service-image img {
+            transform: scale(1.08);
+        }
+
+        .service-content {
+            padding: 26px;
+        }
+
+        .service-content h3 {
+            color: #155d78;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .service-content p {
+            color: #687980;
+            margin-bottom: 20px;
+        }
+
+        .service-btn {
+            display: inline-block;
+            color: #0b85ae;
+            font-weight: bold;
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 65px;
+            align-items: center;
+        }
+
+        .about-image {
+            height: 500px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-content span {
+            color: #0b8db8;
+            font-weight: bold;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .about-content h2 {
+            font-size: 40px;
+            color: #173b4a;
+            line-height: 1.2;
+            margin: 12px 0 20px;
+        }
+
+        .about-content p {
+            color: #65777d;
+            margin-bottom: 25px;
+        }
+
+        .check-list {
+            list-style: none;
+        }
+
+        .check-list li {
+            margin-bottom: 14px;
+            font-weight: 600;
+            color: #40565e;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #e0f5fb;
+            color: #0782a9;
+            margin-right: 10px;
+        }
+
+        /* =========================
+           WHY US
+        ========================= */
+
+        .why {
+            background: #f7fbfd;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+
+        .why-card {
+            background: white;
+            padding: 30px 22px;
+            text-align: center;
+            border-radius: 18px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.05);
+        }
+
+        .why-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 18px;
+            border-radius: 50%;
+            background: #e6f7fc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 27px;
+        }
+
+        .why-card h3 {
+            color: #24596d;
+            margin-bottom: 10px;
+        }
+
+        .why-card p {
+            color: #718087;
+            font-size: 14px;
+        }
+
+        /* =========================
+           PROCESS
+        ========================= */
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 25px;
+        }
+
+        .process {
+            text-align: center;
+            position: relative;
+        }
+
+        .number {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #0b8db8;
+            color: white;
+            font-size: 21px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto auto 18px;
+        }
+
+        .process h3 {
+            color: #25586a;
+            margin-bottom: 8px;
+        }
+
+        .process p {
+            color: #748188;
+            font-size: 14px;
+        }
+
+        /* =========================
+           AREAS
+        ========================= */
+
+        .areas {
+            background: #f7fbfd;
+        }
+
+        .area-box {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .area-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .area-tags span {
+            background: white;
+            border: 1px solid #dcecf1;
+            padding: 12px 20px;
+            border-radius: 30px;
+            color: #356272;
+            font-weight: 600;
+        }
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            background:
+                linear-gradient(
+                    100deg,
+                    #075b78,
+                    #0b91b9
+                );
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            max-width: 650px;
+            margin: 0 auto 28px;
+            color: #e0f5fa;
+        }
+
+        .phone-large {
+            font-size: 30px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-size: 38px;
+            color: #173b4a;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            color: #718087;
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            background: #e7f7fb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #355865;
+        }
+
+        .contact-item span {
+            color: #718087;
+        }
+
+        .contact-form {
+            background: #f7fbfd;
+            padding: 35px;
+            border-radius: 22px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 7px;
+            color: #48626b;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            border: 1px solid #d9e8ed;
+            background: white;
+            padding: 13px 15px;
+            border-radius: 10px;
+            font-family: inherit;
+            outline: none;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #0b91b9;
+        }
+
+        .submit-btn {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 30px;
+            background: #0b8db8;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background: #076c8c;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #123743;
+            color: white;
+            padding: 45px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 35px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+        }
+
+        footer p,
+        footer li {
+            color: #b9cbd0;
+            font-size: 14px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 9px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.12);
+            padding-top: 20px;
+            text-align: center;
+            color: #9eb5bb;
+            font-size: 13px;
+        }
+
+        /* =========================
+           FLOATING CALL
+        ========================= */
+
+        .floating-phone {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            background: #0b9bc7;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 27px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            z-index: 999;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(11,155,199,0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 16px rgba(11,155,199,0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(11,155,199,0);
+            }
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            nav {
+                display: none;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2,1fr);
+                gap: 35px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            section {
+                padding: 65px 0;
+            }
+
+            .header-inner {
+                height: 70px;
+            }
+
+            .logo-text strong {
+                font-size: 14px;
+            }
+
+            .logo-text span {
+                font-size: 10px;
+            }
+
+            .logo-icon {
+                width: 45px;
+                height: 45px;
+            }
+
+            .header-phone {
+                padding: 9px 13px;
+                font-size: 13px;
+            }
+
+            .hero {
+                min-height: 620px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .about-content h2 {
+                font-size: 31px;
+            }
+
+            .about-image {
+                height: 350px;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta h2 {
+                font-size: 30px;
+            }
+
+            .phone-large {
+                font-size: 24px;
+            }
+
+            .contact-form {
+                padding: 22px;
+            }
+
+            .floating-phone {
+                width: 55px;
+                height: 55px;
+                right: 16px;
+                bottom: 16px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <div class="container header-inner">
+
+        <a href="#" class="logo">
+
+            <div class="logo-icon">
+
+                <!-- LOGO SVG -->
+                <svg viewBox="0 0 100 100"
+                     xmlns="http://www.w3.org/2000/svg">
+
+                    <!-- Mái nhà -->
+                    <path d="M15 48 L50 18 L85 48"
+                          fill="none"
+                          stroke="white"
+                          stroke-width="7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+
+                    <!-- Nhà -->
+                    <path d="M25 46 V78 H75 V46"
+                          fill="none"
+                          stroke="white"
+                          stroke-width="7"
+                          stroke-linejoin="round"/>
+
+                    <!-- Người -->
+                    <circle cx="50" cy="43" r="8"
+                            fill="white"/>
+
+                    <path d="M36 67
+                             C37 55 43 51 50 51
+                             C57 51 63 55 64 67"
+                          fill="none"
+                          stroke="white"
+                          stroke-width="6"
+                          stroke-linecap="round"/>
+
+                    <!-- Trái tim -->
+                    <path d="M66 57
+                             C62 52 54 56 56 62
+                             C58 67 66 71 66 71
+                             C66 71 74 67 76 62
+                             C78 56 70 52 66 57Z"
+                          fill="#8ee7f5"/>
+
+                </svg>
+
+            </div>
+
+            <div class="logo-text">
+                <strong>CUNG ỨNG GIÚP VIỆC</strong>
+                <span>MIỀN NAM</span>
+            </div>
+
+        </a>
+
+        <nav>
+            <a href="#trang-chu">Trang chủ</a>
+            <a href="#dich-vu">Dịch vụ</a>
+            <a href="#gioi-thieu">Giới thiệu</a>
+            <a href="#quy-trinh">Quy trình</a>
+            <a href="#lien-he">Liên hệ</a>
+        </nav>
+
+        <a href="tel:0867054114" class="header-phone">
+            ☎ 0867.054.114
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="trang-chu">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                ❤️ Tận tâm - Uy tín - Chuyên nghiệp
+            </div>
+
+            <h1>
+                Người chăm sóc tận tâm
+                <span>cho gia đình bạn</span>
+            </h1>
+
+            <p>
+                Cung cấp người giúp việc nhà, chăm sóc mẹ và bé,
+                chăm sóc người cao tuổi với sự tận tâm và trách nhiệm.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="tel:0867054114" class="btn btn-primary">
+                    ☎ Gọi ngay 0867.054.114
+                </a>
+
+                <a href="#dich-vu" class="btn btn-light">
+                    Xem dịch vụ
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services" id="dich-vu">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>DỊCH VỤ CỦA CHÚNG TÔI</span>
+
+            <h2>
+                Giải pháp chăm sóc gia đình
+            </h2>
+
+            <p>
+                Đồng hành cùng gia đình bạn bằng đội ngũ
+                tận tâm, chu đáo và phù hợp với nhu cầu.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+            <!-- SERVICE 1 -->
+
+            <div class="service-card">
+
+                <div class="service-image">
+
+                    <img
+                        src="images/giup-viec-nha.jpg"
+                        alt="Dịch vụ giúp việc nhà">
+
+                </div>
+
+                <div class="service-content">
+
+                    <h3>Giúp việc nhà</h3>
+
+                    <p>
+                        Dọn dẹp nhà cửa, giặt giũ, nấu ăn
+                        và hỗ trợ các công việc sinh hoạt
+                        hằng ngày trong gia đình.
+                    </p>
+
+                    <a href="tel:0867054114"
+                       class="service-btn">
+                        Liên hệ tư vấn →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 2 -->
+
+            <div class="service-card">
+
+                <div class="service-image">
+
+                    <img
+                        src="images/me-va-be.jpg"
+                        alt="Dịch vụ chăm sóc mẹ và bé">
+
+                </div>
+
+                <div class="service-content">
+
+                    <h3>Chăm sóc mẹ & bé</h3>
+
+                    <p>
+                        Hỗ trợ chăm sóc mẹ sau sinh,
+                        em bé và các công việc cần thiết
+                        trong thời gian gia đình cần hỗ trợ.
+                    </p>
+
+                    <a href="tel:0867054114"
+                       class="service-btn">
+                        Liên hệ tư vấn →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 3 -->
+
+            <div class="service-card">
+
+                <div class="service-image">
+
+                    <img
+                        src="images/cham-soc-nguoi-cao-tuoi.jpg"
+                        alt="Dịch vụ chăm sóc người cao tuổi">
+
+                </div>
+
+                <div class="service-content">
+
+                    <h3>Chăm sóc người cao tuổi</h3>
+
+                    <p>
+                        Đồng hành, hỗ trợ sinh hoạt,
+                        ăn uống và chăm sóc người cao tuổi
+                        tại nhà một cách chu đáo.
+                    </p>
+
+                    <a href="tel:0867054114"
+                       class="service-btn">
+                        Liên hệ tư vấn →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="gioi-thieu">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <img
+                    src="images/gia-dinh.jpg"
+                    alt="Gia đình sử dụng dịch vụ giúp việc">
+
+            </div>
+
+
+            <div class="about-content">
+
+                <span>VỀ CHÚNG TÔI</span>
+
+                <h2>
+                    Trao sự an tâm,
+                    nhận lại niềm tin
+                </h2>
+
+                <p>
+                    Cung Ứng Giúp Việc Miền Nam hướng đến việc
+                    mang đến giải pháp nhân sự gia đình phù hợp,
+                    giúp khách hàng tiết kiệm thời gian và an tâm
+                    hơn trong cuộc sống.
+                </p>
+
+                <ul class="check-list">
+
+                    <li>
+                        Tư vấn người phù hợp với nhu cầu
+                    </li>
+
+                    <li>
+                        Đội ngũ tận tâm, có trách nhiệm
+                    </li>
+
+                    <li>
+                        Hỗ trợ nhanh chóng khi khách hàng cần
+                    </li>
+
+                    <li>
+                        Luôn đặt sự an tâm của gia đình lên hàng đầu
+                    </li>
+
+                </ul>
+
+                <br>
+
+                <a href="tel:0867054114"
+                   class="btn btn-primary">
+                    ☎ Liên hệ ngay
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section class="why">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>VÌ SAO CHỌN CHÚNG TÔI</span>
+
+            <h2>
+                Dịch vụ đặt sự an tâm lên hàng đầu
+            </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <div class="why-icon">❤️</div>
+
+                <h3>Tận tâm</h3>
+
+                <p>
+                    Luôn quan tâm đến nhu cầu
+                    thực tế của từng gia đình.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">✓</div>
+
+                <h3>Uy tín</h3>
+
+                <p>
+                    Làm việc rõ ràng, minh bạch
+                    và đặt quyền lợi khách hàng.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">♙</div>
+
+                <h3>Phù hợp</h3>
+
+                <p>
+                    Tư vấn và kết nối người phù hợp
+                    với từng nhu cầu.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">☎</div>
+
+                <h3>Hỗ trợ</h3>
+
+                <p>
+                    Sẵn sàng tiếp nhận yêu cầu
+                    và hỗ trợ khách hàng.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROCESS
+========================= -->
+
+<section id="quy-trinh">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>QUY TRÌNH LÀM VIỆC</span>
+
+            <h2>
+                Đơn giản - nhanh chóng - rõ ràng
+            </h2>
+
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process">
+
+                <div class="number">01</div>
+
+                <h3>Tiếp nhận nhu cầu</h3>
+
+                <p>
+                    Khách hàng liên hệ và chia sẻ
+                    nhu cầu sử dụng dịch vụ.
+                </p>
+
+            </div>
+
+
+            <div class="process">
+
+                <div class="number">02</div>
+
+                <h3>Tư vấn</h3>
+
+                <p>
+                    Tư vấn loại hình dịch vụ
+                    phù hợp với gia đình.
+                </p>
+
+            </div>
+
+
+            <div class="process">
+
+                <div class="number">03</div>
+
+                <h3>Kết nối</h3>
+
+                <p>
+                    Giới thiệu người phù hợp
+                    theo nhu cầu khách hàng.
+                </p>
+
+            </div>
+
+
+            <div class="process">
+
+                <div class="number">04</div>
+
+                <h3>Đồng hành</h3>
+
+                <p>
+                    Hỗ trợ khách hàng trong quá trình
+                    sử dụng dịch vụ.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICE AREAS
+========================= -->
+
+<section class="areas">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>KHU VỰC CUNG ỨNG</span>
+
+            <h2>
+                Phục vụ khách hàng tại miền Nam
+            </h2>
+
+            <p>
+                Liên hệ để được tư vấn khu vực
+                và nhu cầu cụ thể của gia đình bạn.
+            </p>
+
+        </div>
+
+
+        <div class="area-box">
+
+            <div class="area-tags">
+
+                <span>TP. Hồ Chí Minh</span>
+                <span>Bình Dương</span>
+                <span>Đồng Nai</span>
+                <span>Long An</span>
+                <span>Bà Rịa - Vũng Tàu</span>
+                <span>Tây Ninh</span>
+                <span>Miền Tây</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>
+            Bạn đang cần người giúp việc?
+        </h2>
+
+        <p>
+            Hãy liên hệ ngay để được tư vấn dịch vụ
+            phù hợp với nhu cầu của gia đình.
+        </p>
+
+        <a href="tel:0867054114"
+           class="btn btn-light">
+            ☎ Gọi ngay cho chúng tôi
+        </a>
+
+        <div>
+            <a href="tel:0867054114"
+               class="phone-large">
+                0867.054.114
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="lien-he">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+
+            <div class="contact-info">
+
+                <h2>
+                    Liên hệ với chúng tôi
+                </h2>
+
+                <p>
+                    Hãy để lại thông tin. Chúng tôi sẽ
+                    liên hệ để tư vấn dịch vụ phù hợp
+                    với nhu cầu của gia đình.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ☎
+                    </div>
+
+                    <div>
+                        <strong>Điện thoại</strong>
+
+                        <span>
+                            0867.054.114
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        🏠
+                    </div>
+
+                    <div>
+                        <strong>Dịch vụ</strong>
+
+                        <span>
+                            Giúp việc nhà - Mẹ & Bé -
+                            Người cao tuổi
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+                        <strong>Khu vực</strong>
+
+                        <span>
+                            Miền Nam
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <div class="contact-form">
+
+                <form onsubmit="sendForm(event)">
+
+                    <div class="form-group">
+
+                        <label>
+                            Họ và tên
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Nhập họ và tên"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Số điện thoại
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Nhập số điện thoại"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Bạn cần dịch vụ
+                        </label>
+
+                        <select id="service">
+
+                            <option>
+                                Giúp việc nhà
+                            </option>
+
+                            <option>
+                                Chăm sóc mẹ và bé
+                            </option>
+
+                            <option>
+                                Chăm sóc người cao tuổi
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Nội dung cần tư vấn
+                        </label>
+
+                        <textarea
+                            id="message"
+                            placeholder="Nhập nhu cầu của bạn...">
+                        </textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit-btn">
+
+                        GỬI YÊU CẦU TƯ VẤN
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <h3>
+                    Cung Ứng Giúp Việc Miền Nam
+                </h3>
+
+                <p>
+                    Đồng hành cùng gia đình bạn
+                    bằng sự tận tâm và trách nhiệm.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Dịch vụ</h3>
+
+                <ul>
+
+                    <li>Giúp việc nhà</li>
+
+                    <li>Chăm sóc mẹ và bé</li>
+
+                    <li>Chăm sóc người cao tuổi</li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>Liên hệ</h3>
+
+                <ul>
+
+                    <li>
+                        ☎ 0867.054.114
+                    </li>
+
+                    <li>
+                        📍 Miền Nam
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 Cung Ứng Giúp Việc Miền Nam.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     FLOATING PHONE
+========================= -->
+
+<a href="tel:0867054114"
+   class="floating-phone"
+   title="Gọi ngay">
+
+    ☎
+
+</a>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+function sendForm(event) {
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const service =
+        document.getElementById("service").value;
+
+    const message =
+        document.getElementById("message").value;
+
+
+    const text =
+        <section id="dich-vu" class="services">
+    <div class="container">
+
+        <div class="section-title">
+            <span>DỊCH VỤ CỦA CHÚNG TÔI</span>
+            <h2>Giải pháp chăm sóc gia đình tận tâm</h2>
+            <p>
+                Cung cấp người giúp việc phù hợp, tận tâm và chuyên nghiệp
+                cho từng nhu cầu của gia đình.
+            </p>
+        </div>
+
+        <div class="service-grid">
+
+            <!-- GIÚP VIỆC NHÀ -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/giup-viec-nha.jpg"
+                         alt="Người giúp việc nhà">
+                </div>
+
+                <div class="service-content">
+                    <h3>Giúp việc nhà</h3>
+                    <p>
+                        Dọn dẹp nhà cửa, nấu ăn, giặt giũ và hỗ trợ
+                        các công việc sinh hoạt gia đình.
+                    </p>
+
+                    <a href="tel:0867054114" class="service-btn">
+                        Liên hệ ngay →
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- MẸ VÀ BÉ -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/me-va-be.jpg"
+                         alt="Chăm sóc mẹ và bé">
+                </div>
+
+                <div class="service-content">
+                    <h3>Chăm sóc mẹ và bé</h3>
+                    <p>
+                        Hỗ trợ chăm sóc mẹ sau sinh, em bé và các
+                        công việc cần thiết trong gia đình.
+                    </p>
+
+                    <a href="tel:0867054114" class="service-btn">
+                        Liên hệ ngay →
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- NGƯỜI CAO TUỔI -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/cham-soc-nguoi-cao-tuoi.jpg"
+                         alt="Chăm sóc người cao tuổi">
+                </div>
+
+                <div class="service-content">
+                    <h3>Chăm sóc người cao tuổi</h3>
+                    <p>
+                        Đồng hành, hỗ trợ sinh hoạt, chăm sóc ăn uống
+                        và các nhu cầu hằng ngày của người cao tuổi.
+                    </p>
+
+                    <a href="tel:0867054114" class="service-btn">
+                        Liên hệ ngay →
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    /*
+       Mở ứng dụng Zalo nếu người dùng
+       thay link bên dưới bằng link Zalo OA
+       của doanh nghiệp.
+    */
+
+
+    alert(
+        "Cảm ơn bạn đã gửi yêu cầu! " +
+        "Vui lòng gọi 0867.054.114 để được tư vấn nhanh nhất."
+    );
+
+    window.location.href =
+        "tel:0867054114";
+
+}
+
+</script>
+
+</body>
+</html>
+```
+
